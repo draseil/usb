@@ -3,20 +3,7 @@
 
 /* This program was written by Luigi Lorenzo Martinesi
  * If some asshole tries to steal it, I have given you the right to punch them in the face
- * This is licensed under the WTFPL:
- *
- *         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
- *                     Version 2, December 2004
- *
- * Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
- * Everyone is permitted to copy and distribute verbatim or modified
- * copies of this license document, and changing it is allowed as long
- * as the name is changed.
- *
- *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
- *   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
- *
- * 0. You just DO WHAT THE FUCK YOU WANT TO.
+ * This is licensed under CC 2.0
  */
 
 void getDeviceInfo(libusb_device * device, int deviceNumber) {
