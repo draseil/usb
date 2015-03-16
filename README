@@ -1,0 +1,9 @@
+USB
+
+Maybe I should make a better name for this
+This is a program that finds every USB device attached to your computer and outputs some information about it.
+That's all it does, I swear
+
+How to build/run:
+1) Run `make`
+2) Run `bin/usb`
