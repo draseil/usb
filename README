@@ -5,5 +5,6 @@ This is a program that finds every USB device attached to your computer and outp
 That's all it does, I swear
 
 How to build/run:
-1) Run `make`
-2) Run `bin/usb`
+1) Make a bin/ directory
+2) Run `make`
+3) Run `bin/usb`
