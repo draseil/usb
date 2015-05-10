@@ -1,0 +1,5 @@
+#!/bin/sh
+ID=$1
+
+curl -s http://www.pcidatabase.com/search.php?vendor_search_str=${ID} \
+	| awk -F'[<>]' '/<tr class=/{printf("Vendor: %s\n", $11)}'
