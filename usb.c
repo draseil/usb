@@ -10,7 +10,7 @@ void getDeviceInfo(libusb_device * device, int device_number) {
 	struct libusb_device_descriptor descriptor;
 	libusb_get_device_descriptor(device, &descriptor);
 
-	printf("Device %d:\n", deviceNumber);
+	printf("Device %d:\n", device_number);
 	printf("Vendor ID: %X\n", descriptor.idVendor);
 	printf("Product ID: %X\n", descriptor.idProduct);
 	printf("USB release number: %X\n", descriptor.bcdUSB);
