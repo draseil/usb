@@ -33,11 +33,14 @@ int main(int argc, char ** argv) {
 		getDeviceInfo(list[i], i);
 	}
 
+	int j;
 	printf("\n\nWhich device would you like to read from?  ");
-	scanf("%d", &i);
+	scanf("%d", &j);
 
-	libusb_open(list[i], &handle);
+	libusb_open(list[j], &handle);
 	libusb_close(handle);
+
+	libusb_free_device_list(list, 1);
 
 	libusb_exit(context);
 
