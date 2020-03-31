@@ -1,2 +1,2 @@
 all:
-	cc *.c -o bin/usb -lusb-1.0
+	gcc *.c -o usb -lusb-1.0
