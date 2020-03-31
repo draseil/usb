@@ -6,7 +6,7 @@
  * It is licensed under the MIT license
  */
 
-void getDeviceInfo(libusb_device * device, int deviceNumber) {
+void getDeviceInfo(libusb_device * device, int device_number) {
 	struct libusb_device_descriptor descriptor;
 	libusb_get_device_descriptor(device, &descriptor);
 
@@ -23,12 +23,12 @@ int main(int argc, char ** argv) {
 	libusb_device_handle * handle;
 	libusb_init(&context);
 
-	ssize_t deviceList = libusb_get_device_list(context, &list);
+	ssize_t device_list = libusb_get_device_list(context, &list);
 
-	printf("Number of devices: %d\n", deviceList);
+	printf("Number of devices: %d\n", device_list);
 
 	int i;
-	for (i = 0; i < deviceList; i++) {
+	for (i = 0; i < device_list; i++) {
         puts("");
 		getDeviceInfo(list[i], i);
 	}
